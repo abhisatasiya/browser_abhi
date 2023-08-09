@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:mirror_wall/controllers/providers/app_provider.dart';
-import 'package:mirror_wall/models/app-model.dart';
 import 'package:mirror_wall/views/screens/webview_page.dart';
 import 'package:provider/provider.dart';
 
@@ -12,8 +11,7 @@ void main() {
           create: (context) => ConnectivityProvider(),
         ),
         ChangeNotifierProvider(
-          create: (context) => RadioButtonAccessProvider(
-          ),
+          create: (context) => RadioButtonAccessProvider(),
         ),
       ],
       builder: (context, _) {
